@@ -4,10 +4,13 @@
 <div class="container my-3">
     <h1>Other Page</h1>
     <div class="row g-4">
-        <div class="col">
-            <div>
-                <p>This is another page, with a different content for sure</p>
-            </div>
+        <div class="col-12">
+            <section>
+                <h3>{{$data[0]['title']}}</h3>
+                <p>{{$data[0]['description']}}</p>
+                <img class="other" src="{{$data[0]['thumb']}}" alt="img">
+                <small>{{$data[0]['price']}}</small>
+            </section>
         </div>
     </div>
 
