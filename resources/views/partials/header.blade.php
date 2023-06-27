@@ -22,7 +22,7 @@
 
       </div>
     </div>
-    <div class="container-fluid bg-dark">
+    <div class="container bg-dark">
         <div class="row">
             {{--foto grande jumbotron--}}
             <div class="col-12 my-height"></div>
