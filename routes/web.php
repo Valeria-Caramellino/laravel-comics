@@ -14,11 +14,19 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $links = config('store.someLinks');
-    return view('welcome', compact('links'));
+    $data = config('comics');
+    $links = config('store.someLinksTestata');
+    $footerBlue = config('store.SectionBlueFooter');
+    $SectionStringFooter= config('store.SectionStringFooter');
+    $list=config('store.listFooter1');
+    return view('welcome', compact('links','data','footerBlue','SectionStringFooter','list'));
 });
 
 Route::get('/otherpage', function () {
-    $links = config('store.someLinks');
-    return view('other', compact('links'));
+    $data = config('comics');
+    $links = config('store.someLinksTestata');
+    $footerBlue = config('store.SectionBlueFooter');
+    $SectionStringFooter= config('store.SectionStringFooter');
+    $list=config('store.listFooter1');
+    return view('other', compact('links','data','footerBlue','SectionStringFooter','list'));
 });
