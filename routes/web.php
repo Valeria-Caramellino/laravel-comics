@@ -14,19 +14,27 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    $data = config('comics');
-    $links = config('store.someLinksTestata');
-    $footerBlue = config('store.SectionBlueFooter');
-    $SectionStringFooter= config('store.SectionStringFooter');
-    $list=config('store.listFooter1');
-    return view('welcome', compact('links','data','footerBlue','SectionStringFooter','list'));
+    $data = [
+        'data' => config('comics'),
+        'links' => config('store.someLinksTestata'),
+        'footerBlue' => config('store.SectionBlueFooter'),
+        
+        'SectionStringFooter' => config('store.SectionStringFooter'),
+        
+    ];
+     
+   
+    return view('welcome', $data);
 });
 
 Route::get('/otherpage', function () {
-    $data = config('comics');
-    $links = config('store.someLinksTestata');
-    $footerBlue = config('store.SectionBlueFooter');
-    $SectionStringFooter= config('store.SectionStringFooter');
-    $list=config('store.listFooter1');
-    return view('other', compact('links','data','footerBlue','SectionStringFooter','list'));
+    $data = [
+        'data' => config('comics'),
+        'links' => config('store.someLinksTestata'),
+        'footerBlue' => config('store.SectionBlueFooter'),
+        
+        'SectionStringFooter' => config('store.SectionStringFooter'),
+        
+    ];
+    return view('other', $data);
 });

@@ -19,8 +19,15 @@
                     @foreach($SectionStringFooter as $oggetto)
                         <div class="col-4">
                             <p class="mt-2">{{ $oggetto['title']}}</p>
+                            <ul>
+                                @foreach ($oggetto['listFooter'] as $item)
+                                     <li>{{$item}}</li> 
+                                @endforeach
+                              
+                            </ul>
                         </div>
                     @endforeach
+                    
                     
                 </div>
             </div>

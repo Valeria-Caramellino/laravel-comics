@@ -46,30 +46,30 @@ return [
     ],
     'SectionBlueFooter' =>[
         [
-            "icon" => "buy-comics-digital-comics.png",
+            "icon" => "resources/img/buy-comics-digital-comics.png",
             "text" => "DIGITAL COMICS",
         ],
         [
-            "icon" => "buy-comics-merchandise.png",
+            "icon" => "resources/img/buy-comics-merchandise.png",
             "text" => "DC MERCHANDISE",
         ],
         [
-            "icon" => "buy-comics-subscriptions.png",
+            "icon" => "resources/img/buy-comics-subscriptions.png",
             "text" => "SUBSCRIPTION",
         ],
         [
-            "icon" => "buy-comics-shop-locator.png",
+            "icon" => "resources/img/buy-comics-shop-locator.png",
             "text" => "COMIC SHOP LOCATOR",
         ],
         [
-            "icon" => "buy-dc-power-visa.svg",
+            "icon" => "resources/img/buy-dc-power-visa.svg",
             "text" => "DC POWER VISA",
         ],
     ],
     'SectionStringFooter' =>[
         [
             'title'=>"DC COMICS",
-            "listFooter" =>[
+            'listFooter' =>[
                 "Charactes",
                 "Comics",
                 "Movies",
@@ -81,7 +81,7 @@ return [
         ],
         [
             'title'=>"DC",
-            "listFooter" =>[
+            'listFooter' =>[
                 "Terms Of Use",
                 "Privacy politicy (New)",
                 "Ad Choices",
@@ -97,7 +97,7 @@ return [
         ],
         [
             'title'=>"SITES",
-            "listFooter" =>[
+            'listFooter' =>[
                 "DC",
                 "MAD Magazine",
                 "DC Kids",
@@ -107,16 +107,11 @@ return [
         ],
         [
             'title'=>"SHOP",
-            "listFooter" =>[
+            'listFooter' =>[
                 "Shop DC",
                 "Shop DC Collectibles"
             ],
         ],
     ],
-    'listFooter1'=>[
-        [
-            "Shop DC",
-            "Shop DC Collectibles"
-        ],
-    ]
+    
 ];

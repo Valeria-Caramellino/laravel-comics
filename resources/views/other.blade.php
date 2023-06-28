@@ -10,8 +10,16 @@
                 <p>{{$data[0]['description']}}</p>
                 <img class="other" src="{{$data[0]['thumb']}}" alt="img">
                 <small>{{$data[0]['price']}}</small>
+                <ul>
+                    @foreach($data[0]['artists'] as $oggetto )
+                    
+                    <li>{{$oggetto}}</li>
+                    @endforeach
+                </ul>
             </section>
         </div>
+        
+    
     </div>
 
 </div>
